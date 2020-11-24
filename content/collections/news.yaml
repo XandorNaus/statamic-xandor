@@ -1,0 +1,10 @@
+title: News
+template: News/index
+layout: layout
+revisions: false
+route: /news/
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

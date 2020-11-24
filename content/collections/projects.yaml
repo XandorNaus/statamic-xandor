@@ -1,0 +1,9 @@
+title: Projects
+template: Projecten/index
+layout: layout
+revisions: false
+route: /products
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

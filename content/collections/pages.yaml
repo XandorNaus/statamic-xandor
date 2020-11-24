@@ -1,0 +1,14 @@
+title: Pages
+revisions: false
+route: '{parent_uri}/{slug}'
+structure:
+  root: true
+  tree:
+    -
+      entry: home
+    -
+      entry: 77fa2348-d4b0-4045-ad3d-d0fb97665b93
+    -
+      entry: 47414ab5-9007-4ead-818c-5653a8edbd74
+    -
+      entry: 13ce6cc1-c2be-40d0-86cf-e0b12e488cbd

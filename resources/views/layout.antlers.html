@@ -44,10 +44,14 @@
                         </nav>
 
                         <nav class="block md:ml-auto items-center mt-4 text-base font-bold w-full text-right">
-                            <a href="/products" class="mr-5 ml-2 mr-2 hover:text-gray-900">Projecten</a>
-                            <a href="/news" class="mr-5 ml-2 mr-2 hover:text-gray-900">Nieuws</a>
-                            <a href="/diensten" class="mr-5 ml-2 mr-2 hover:text-gray-900">Diensten</a>
-                            <a href="nettt/" class="mr-5 ml-2 mr-2 hover:text-gray-900 ">Nettt</a>
+
+                            {{ nav:collection:pages }}
+
+
+                            <a href="{{ url }}" class="ml-7">{{ title }}</a>
+
+                            {{ /nav:collection:pages }}
+
                         </nav>
                     </div>
                 </div>
@@ -68,6 +72,9 @@
                 </div>
                 <div class="lg:w-1/4 md:w-1/4 w-full mt-8 mr-10 ml-10 px-10">
                     <nav class="list-none mb-4">
+
+
+
                         <li>
                             <a class="text-gray-600 hover:text-gray-800 font-bold">Nettt Interactieve Media</a>
                         </li>

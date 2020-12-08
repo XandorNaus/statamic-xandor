@@ -1,4 +1,8 @@
-# admin:
-#   title: Administrators
-#   roles:
-#     - admin
+medewerkers:
+  title: Medewerkers
+  roles:
+    - medewerkers
+directie:
+  title: Directie
+  roles:
+    - directie

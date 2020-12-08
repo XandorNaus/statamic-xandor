@@ -10,40 +10,114 @@ sections:
           required: true
           validate:
             - required
-      -
-        handle: content
-        field:
-          type: markdown
-          display: Content
-          localizable: true
-      -
-        handle: author
-        field:
-          type: users
-          display: Author
-          default: current
-          localizable: true
-          max_items: 1
-      -
-        handle: template
-        field:
-          type: template
-          display: Template
-          localizable: true
+          listable: hidden
+          input_type: text
       -
         handle: image
         field:
           mode: grid
           restrict: false
           allow_uploads: true
-          display: Image
+          display: Omslagfoto
           type: assets
           icon: assets
           listable: hidden
-          instructions: 'You can upload a Image here.'
+          instructions: 'Upload hier de omslagfoto van je pagina.'
           container: assets
           folder: /
           max_files: 1
+      -
+        handle: titel_blok_1
+        field:
+          input_type: text
+          display: 'Titel Blok 1'
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Plaats hier de titel van je eerste blok.'
+          character_limit: 25
+      -
+        handle: content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          display: 'Contentblok 1'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions: 'Plaats hier de content voor je eerste blok.'
+      -
+        handle: titel_blok_2
+        field:
+          input_type: text
+          display: 'Titel Blok 2'
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Plaats hier de titel van je tweede blok.'
+      -
+        handle: contentblok_2
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Contentblok 2'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: seo
+        field:
+          input_type: text
+          display: SEO
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Voer hier een titel in voor de websiteoptimalisatie.'
+          character_limit: 10
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
   sidebar:
     display: Sidebar
     fields:
@@ -56,6 +130,14 @@ sections:
           validate:
             - required
       -
+        handle: user
+        field:
+          mode: select
+          display: User
+          type: users
+          icon: users
+          listable: hidden
+      -
         handle: parent
         field:
           type: entries
@@ -64,3 +146,6 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+  meta_data:
+    display: 'Meta Data'
+    fields: {  }

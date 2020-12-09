@@ -1,4 +1,24 @@
 name: Nettt
 super: true
+roles:
+  - directie
+groups:
+  - directie
+avatar: 120923193_2796955970622431_7579313839659677267_o.jpg
 id: 14190311-c6b5-4959-b865-043c19352531
 password_hash: $2y$10$N4UUj2WwZBcJvm3W8V9qIOfuQvQz3Medub/559.ycl5N/7SOac1pu
+preferences:
+  start_page: collections
+  collections:
+    news:
+      columns:
+        - title
+        - users
+        - image
+        - content
+    projects:
+      columns:
+        - title
+        - slug
+        - image
+        - url_project

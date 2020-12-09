@@ -1,0 +1,17 @@
+title: 'Meta Data'
+fields:
+  -
+    handle: meta_title
+    field:
+      input_type: text
+      display: 'Meta Title'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: meta_description
+    field:
+      display: 'Meta Description'
+      type: textarea
+      icon: textarea
+      listable: hidden

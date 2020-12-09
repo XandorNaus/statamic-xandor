@@ -1,21 +1,28 @@
 
 <!-- slider -->
-<div class="bg-no-repeat bg-top w-full py-56 px-34 bg-cover w-full h-32 object-bottom lg:h-48 md:h-46 w-full object-cover object-center" style="background-image: url('https://images.pexels.com/photos/273214/pexels-photo-273214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')";>
-</div>
-<!-- /slider -->
 
+<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+
+
+    <div class="container max-w-7xl mx-autor">
+    </div>
+
+    <svg class="w-full bg-cover w-full object-top mt-40 animate-bounce text-center w-6 h-8 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+
+</div>
+
+<!-- /slider -->
 <!-- home content -->
 <section class="text-gray-700 bg-pink body-font">
-    <div class="container px-5 py-24 text-center text-white mx-auto">
+    <div class="container px-5 py-16 text-center text-white mx-auto">
 
-        <svg class="w-full bg-cover w-full object-top mb-10 animate-bounce text-center w-6 h-8 text-gray-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
 
-        <h1 class="text-3xl font-medium title-font text-white mb-5 text-center"> {{ titel_blok_1 }}</h1>
-        <div class="xl:w-1/2 lg:w-3/4 w-full text-white mx-auto text-center">
+        <h1 class="text-3xl font-medium title-font text-white mb-10 text-center"> {{ titel_blok_1 }}</h1>
+        <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
 
-            <p > {{ content }} </p>
+            <p class ="mb-5" {{ content }} </p>
             <a href="/nettt">
             <button class="rounded bg-white items-center text-pink px-4 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                 Lees verder &raquo;
@@ -27,9 +34,12 @@
 
 
 <!-- /nieuws -->
-<section class="text-gray-700 mb-20 bg-white body-font">
-    <div id="products">
-        <h1 class="text-4xl font-bold title-font text-pink mt-10 mb-5 text-center"> Nieuws </h1>
+<section class="text-gray-700 py-6   mt-5 mb-20 bg-white body-font">
+    <div id="news">
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Nieuws</h1>
+        <div class="bg-pink h-1 w-24 m-auto "></div>
+
+
         <div class="w-full px-10 py-3 text-left bg-white-300 text-pink leading-normal">
             <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
 
@@ -83,35 +93,52 @@
 
 <!-- /about -->
 
-<section class="text-gray-700 bg-pink body-font">
-    <div class="container px-5 py-24 text-center text-white mx-auto">
-        <h1 class="text-3xl font-medium title-font text-white mb-5 text-center">Diensten</h1>
-        <div class="xl:w-1/2 lg:w-3/4 w-full text-white mx-auto text-center">
+<div class="block block-hotspots  bg-gray-200 py-16">
 
-            <p class="mb-10 font-light">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+    <div class="relative">
+        <div class="flex w-100 flex-wrap  lg:flex">
+            <div class="w-full  py-4 lg:w-3/5"><img src="https://media-exp1.licdn.com/dms/image/C4D1BAQHc_dD5hjv1Nw/company-background_10000/0?e=2159024400&v=beta&t=QL47HA1TF_3Kh04LWkheTMG-cb8n2mjSF_yxSI67TL8"></div>
+            <div class="hidden lg:block lg:w-2/5 bg-gray bg-opacity-75 transform scale-y-90"></div>
+        </div>
+        <div class="lg:absolute  top-0 w-full h-full flex items-center">
+            <div class="container m-auto flex justify-end  items-center h-full">
+                <div class="bg-pink rounded  p-6 w-full lg:w-3/5 xl:w-1/2 transform -translate-y-6 lg:translate-y-0 mx-3 lg:m-0  overflow-auto" style="height: 80%;">
+                    <div class="flex-wrap w-full h-full flex justify-center items-center text-center text-white">
+                        <div>
+                            <div class="text-lg italic">Dit zijn onze</div>
+                            <h2 class="font-bold text-3xl mb-3">Diensten</h2>
+                            <div class="bg-white h-1 w-24 m-auto mb-6"></div>
+                            <div class="italic">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aperiam asperiores, assumenda beatae doloribus esse in inventore ipsa labore, laboriosam laudantium magnam minima, molestiae necessitatibus omnis porro quos recusandae repellat sapiente similique tempore unde ut! A accusantium alias animi consequuntur cum cumque dignissimos doloribus enim esse est fuga maiores maxime nobis praesentium provident quidem quisquam, repellat voluptas. A amet, hic incidunt inventore minus, nemo nisi quod quos, soluta tempora totam voluptate voluptatem voluptatibus? Aut maxime, modi nemo omnis optio quasi unde! Architecto assumenda fugiat necessitatibus provident quisquam sed temporibus. Atque deserunt distinctio dolores et, incidunt minus possimus ut. Quis?
+                            </div>
 
-            <a href="/diensten">
-            <button class="rounded bg-white items-center text-pink px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                Lees verder &raquo;
-            </button> </a>
+                            <a href="/nettt">
+                                <button class="mt-10 rounded bg-white items-center text-pink px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                    Lees verder &raquo;
+                                </button> </a>
+                        </div>
 
 
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-</section>
+</div>
 
 <!-- /nieuws -->
 <section class="text-gray-700 mb-20 bg-white body-font">
     <div id="projects">
-        <h1 class="text-4xl font-bold title-font text-pink mt-10 mb-5 text-center">Projecten</h1>
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Projecten</h1>
+        <div class="bg-pink h-1 w-24 m-auto "></div>
+
         <div class="w-full px-10 py-3 text-left bg-white-300 text-pink leading-normal">
             <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
 
                 <div class="flex text-black flex-wrap mt-12 pb-16">
-                    {{ collection:projects }}
-                    {{ partial:projects.card class="w-full   md:w-1/3 px-0 " }}
-                    {{ /collection:projects }}
+
                 </div>
 
             </div>

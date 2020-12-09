@@ -11,31 +11,12 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: subtitle
         field:
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          display: Content
-          type: markdown
-          icon: markdown
-          listable: hidden
-      -
-        handle: date
-        field:
-          mode: single
-          time_enabled: false
-          time_required: false
-          earliest_date: '1900-01-01'
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          display: Date
-          type: date
-          icon: date
+          input_type: text
+          display: Subtitle
+          type: text
+          icon: text
           listable: hidden
       -
         handle: image
@@ -50,6 +31,59 @@ sections:
           listable: hidden
           folder: /
           max_files: 1
+      -
+        handle: project_content
+        field:
+          always_show_set_button: true
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Project Content'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: url_project
+        field:
+          display: URL
+          type: link
+          icon: link
+          listable: hidden
+      -
+        handle: author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+      -
+        handle: related_projects
+        field:
+          mode: select
+          display: Related_projects
+          type: entries
+          icon: entries
+          listable: hidden
+          collections:
+            - projects
   sidebar:
     display: Sidebar
     fields:
@@ -62,10 +96,36 @@ sections:
           validate:
             - required
       -
-        handle: user
+        handle: date
         field:
-          mode: select
-          display: User
-          type: users
-          icon: users
+          type: date
+          required: true
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          icon: date
           listable: hidden
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - projects
+          max_items: 1
+          listable: false
+          localizable: true
+  meta_data:
+    display: 'Meta Data'
+    fields:
+      -
+        import: seo
+      -
+        import: seo

@@ -1,12 +1,39 @@
-<img src="{{ glide:image width="1600" height="900" }}" class="w-full relative -mt-px border-b">
+<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
-<div class="max-w-4xl mx-auto px-2 my-8 flex flex-wrap">
-    <div class="w-full md:w-2/3 md:pr-24">
-        <div class="flex">
-            <div class="flex-1">
-                <h1 class="text-3xl font-medium text-gray-800 pr-4 leading-none mb-2">{{ title | widont }}</h1>
 
-            </div>
-        </div>
-    </div>
 </div>
+<div class="max-w-2xl mb-20 mx-auto">
+
+    <h1 class ="text-6xl font-black leading-none mt-16 text-left"> {{ title }}</h1>
+
+    <div class="flex items-center my-16">
+
+        <div class ="leading-tight ">
+            <h2 class="text-sm text-gray-600"> {{ subtitle }}</h2>
+            <p class="text-sm text-gray-600"> {{ url_project }}</p>
+        </div>
+        </div>
+
+        <div class="space-y-12 mb-18">
+
+            {{ project_content }}
+
+            <aside class="border-t-8 border-pink my-14 py-8 max-w-2xl mx-auto">
+
+                <h3 class="text-lg font-bold">Related Articles</h3>
+                <ul class="text-sm italic space-y-2 my-8">
+
+                    {{ related_projects}}
+
+                    <li><a href="{{ url }}" class="text-red-700 hover:text-pink hover:font-bold "> &rarr; {{ title }}</a></li>
+
+                    {{ /related_projects}}
+
+                </ul>
+
+            </aside>
+
+    </div>
+
+</div>
+

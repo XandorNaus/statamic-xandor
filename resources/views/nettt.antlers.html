@@ -3,8 +3,7 @@
 <head>
 </head>
 <body>
-
-<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('https://images.pexels.com/photos/3861951/pexels-photo-3861951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
     <div class="container max-w-7xl mx-autor">
     </div>
@@ -12,11 +11,12 @@
 </div>
 
 
+
 <section class="text-gray-700 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col
             text-left  w-full mb-7">
-            <h1 class="sm:text-3xl text-2xl text-left font-bold text-pink title-font mb-4 text-gray-900">Nettt Interactieve Media</h1>
+            <h1 class="sm:text-3xl text-2xl text-left font-bold text-pink title-font mb-4 text-gray-900"> {{ title }}</h1>
 
             <p> {{ content }} </p>
 
@@ -28,7 +28,7 @@
 
         {{ files }}
 
-        <div class="mb-2">
+        <div class="mb-10">
 
             <img src="{{ value }}">
             <p class="ïta;ic text-sm opacity-50">{{ value | get:alt }}</p>
@@ -38,9 +38,9 @@
         {{ /files }}
 
         <a href="/">
-        <button class="rounded bg-pink items-center  text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
-            Ga terug naar home &raquo;
-        </button> </a>
+            <button  class="rounded bg-pink items-center  text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
+                Ga terug naar home &raquo;
+            </button> </a>
 
     </div>
 

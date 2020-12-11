@@ -78,12 +78,13 @@ sections:
         handle: related_projects
         field:
           mode: select
-          display: Related_projects
+          display: 'Related Projects'
           type: entries
           icon: entries
           listable: hidden
           collections:
             - projects
+          max_items: 3
   sidebar:
     display: Sidebar
     fields:
@@ -113,6 +114,14 @@ sections:
           listable: hidden
           validate:
             - required
+      -
+        handle: categories
+        field:
+          type: terms
+          taxonomies:
+            - categories
+          display: Categories
+          mode: select
       -
         handle: parent
         field:

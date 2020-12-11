@@ -1,20 +1,20 @@
-<a href="{{ url }}" class="{{ class }}">
+<a href =" {{ url }} " class="w-full h-full border-gray-400 shadow hover:shadow-lg transition rounded transform motion-reduce:transform-none hover border-1 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
 
-    <div class=" text-sm text-gray-700 ">
 
-    </div>
+    <img class="h-40 w-full rounded" src="{{ image }}" alt="{{ image:alt }}" class="rounded-t">
 
-    <div class="transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
-                        <img class="lg:h-48 md:h-46 w-full object-cover object-center" src=" {{ image }} " alt=" {{ image:alt }} ">
-                        <div class="p-6">
-                            <h3 class="font-medium leading-tight">{{ title }}</h3>
-                            <p class="font-light leading-tight">{{ date }}<p/>
-                            <p class="leading-relaxed mb-3"> {{ content }}</p>
+        <article class="p-2 ">
+            <div class ="flex items-center">
 
-                    </div>
-</div>
+                <div class="leading-tight">
+                    <h2 class="text-1xl font-bold text-pink leading-tight mt-4"> {{ title }} </h2>
 
+
+                </div>
+            </div>
+
+            <p class="text-sm text-gray-600"> {{ date }} </p>
+        </article>
+
+    </a>
 </a>
-
-
-

@@ -11,10 +11,93 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: subtitle
         field:
-          type: markdown
+          input_type: text
+          character_limit: 10
+          display: Subtitle
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions: 'You can upload a Image here.'
+          container: assets
+          folder: /
+          max_files: 1
+      -
+        handle: news_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'News Content'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: news_url
+        field:
+          display: URL
+          type: link
+          icon: link
+          listable: hidden
+      -
+        handle: Author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+      -
+        handle: related_news
+        field:
+          max_items: 10
+          mode: select
+          collections:
+            - news
+          display: 'Related News'
+          type: entries
+          icon: entries
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
           localizable: true
+          validate:
+            - required
       -
         handle: date
         field:
@@ -33,35 +116,17 @@ sections:
           validate:
             - required
       -
-        handle: image
+        handle: categories
         field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions: 'You can upload a Image here.'
-          container: assets
-          folder: /
-          max_files: 1
-  sidebar:
-    display: Sidebar
+          type: terms
+          taxonomies:
+            - categories
+          display: Categories
+          mode: select
+  meta_data:
+    display: 'Meta Data'
     fields:
       -
-        handle: slug
-        field:
-          type: slug
-          required: true
-          localizable: true
-          validate:
-            - required
+        import: seo
       -
-        handle: users
-        field:
-          mode: select
-          display: Users
-          type: users
-          icon: users
-          listable: hidden
+        import: seo

@@ -5,7 +5,7 @@
 <body>
 <div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
-    <div class="container max-w-7xl mx-autor">
+    <div class="container max-w-7xl mx-auto">
     </div>
 
 </div>
@@ -15,35 +15,60 @@
 <section class="text-gray-700 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col
-            text-left  w-full mb-7">
+            text-left w-full">
             <h1 class="sm:text-3xl text-2xl text-left font-bold text-pink title-font mb-4 text-gray-900">Diensten</h1>
 
             <p> {{ content }} </p>
 
-            <img class="lg:h-75 md:h-32 w-full object-cover mt-10 object-center" src=" {{ image }} " alt=" {{ image:alt }} ">
-
             <p class="mt-10"> {{ contentblok_2 }} </p>
 
-        </div>
-
-{{ files }}
-
-        <div class="mb-10">
-
-            <img src="{{ value }}">
-            <p class="ïta;ic text-sm opacity-50">{{ value | get:alt }}</p>
+            <a href="/">
+                <button  class="rounded bg-pink items-center mt-8 text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
+                    Ga terug naar home &raquo;
+                </button> </a>
 
         </div>
 
-        {{ /files }}
 
-        <a href="/">
-        <button  class="rounded bg-pink items-center  text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
-            Ga terug naar home &raquo;
-        </button> </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="relative">
+        <div class="flex w-100 flex-wrap  lg:flex">
+            <div class="w-full py-4 lg:w-3/5"><img src="https://media-exp1.licdn.com/dms/image/C4D1BAQHc_dD5hjv1Nw/company-background_10000/0?e=2159024400&v=beta&t=QL47HA1TF_3Kh04LWkheTMG-cb8n2mjSF_yxSI67TL8"></div>
+            <div class="hidden lg:block lg:w-2/5 bg-gray bg-opacity-75 transform scale-y-90"></div>
+        </div>
+        <div class="lg:absolute  top-0 w-full h-full flex items-center">
+            <div class="container m-auto flex justify-end  items-center h-full">
+                <div class="bg-pink rounded  p-6 w-full lg:w-3/5 xl:w-1/2 transform -translate-y-6 lg:translate-y-0 mx-3 lg:m-0  overflow-auto" style="height: 80%;">
+                    <div class="flex-wrap w-full h-full flex justify-center items-center text-center text-white">
+                        <div>
+                            <div class="text-lg italic">Dit zijn onze</div>
+                            <h2 class="font-bold text-3xl mb-3">Diensten</h2>
+                            <div class="bg-white h-1 w-24 m-auto mb-6"></div>
+                            <div class="italic">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aperiam asperiores, assumenda beatae doloribus esse in inventore ipsa labore, laboriosam laudantium magnam minima, molestiae necessitatibus omnis porro quos recusandae repellat sapiente similique tempore unde ut! A accusantium alias animi consequuntur cum cumque dignissimos doloribus enim esse est fuga maiores maxime nobis praesentium provident quidem quisquam, repellat voluptas. A amet, hic incidunt inventore minus, nemo nisi quod quos, soluta tempora totam voluptate voluptatem voluptatibus? Aut maxime, modi nemo omnis optio quasi unde! Architecto assumenda fugiat necessitatibus provident quisquam sed temporibus. Atque deserunt distinctio dolores et, incidunt minus possimus ut. Quis?
 
     </div>
 
+
+
+    </div>
+
+
+                    <div>
+
+                        <a href="/">
+                            <button  class="rounded bg-white items-center text-pink px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
+                                Ga terug naar home &raquo;
+                            </button> </a>
+
+                    </div>
 
 
 </section>

@@ -131,6 +131,15 @@ sections:
           type: template
           display: Template
           localizable: true
+      -
+        handle: grid
+        field:
+          mode: table
+          reorderable: true
+          display: Grid
+          type: grid
+          icon: grid
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -172,6 +181,14 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: categories
+        field:
+          type: terms
+          taxonomies:
+            - categories
+          display: Categories
+          mode: select
   meta_data:
     display: 'Meta Data'
     fields:

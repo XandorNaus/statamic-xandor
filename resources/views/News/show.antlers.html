@@ -1,12 +1,79 @@
-<img src="{{ glide:image width="1600 height="900" }} class="w-full relative -mt-px border-b">
+<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
-<div class="max-w-4xl mx-auto px-2 my-8 flex flex-wrap">
-    <div class="w-full md:w-2/3 md:pr-24">
-        <div class="flex">
-            <div class="flex-1">
-                <h1 class="text-3xl font-medium text-gray-800 pr-4 leading-none mb-2">{{ url_project }}</h1>
+    <div class="container max-w-7xl mx-auto">
+    </div>
 
-            </div>
+</div>
+
+<section class="text-gray-700 bg-pink body-font">
+    <div class="container px-5 py-16 text-center text-white mx-auto">
+
+
+        <h1 class="text-3xl font-medium title-font text-white mb-5 text-center"> {{ title }}</h1>
+
+        <div class="flex space-x-3 mt-8 text-xs tracking-widest uppercase">
+
+            {{ categories }}
+
+            <a href=" {{ url }} " class="bg-white text-pink mb-10 hover:bg-pink hover:text-pink font-bold px-3 items-center py-px  no-underline hover:text-white  hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"> {{ title_categorie }}</a>
+
+            {{ /categories }}
+
+        </div>
+
+        <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
+            <p class="text-sm0"> {{ news_content }}</p>
+
+
+            <a href="/nieuws">
+                <button class="rounded bg-white items-center text-pink px-4 mt-10 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                    Ga terug naar nieuws &raquo;
+                </button> </a>
+
         </div>
     </div>
-</div>
+</section>
+
+
+<!-- /nieuws -->
+<section class="text-gray-700 py-6 bg-white body-font">
+    <div id="news">
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Ander nieuws</h1>
+
+        <div class="w-full px-10  text-left bg-white-300 text-pink leading-normal">
+            <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+
+                <div class="flex text-black flex-wrap pb-16">
+
+                    <div class="container mb-20 mx-auto">
+
+                        <div class="max-w-screen-xl mx-auto">
+
+                            <aside class="border-t-8 border-pink max-w-2xl mx-auto">
+
+
+                                {{ if related_news }}
+
+                                <div class="grid grid-cols-3 space-x-1 grid-cols-2 gap-8 mt-16 ">
+
+                                    {{ related_news}}
+
+                                    {{ partial:news/card }}
+
+                                    {{ /related_news}}
+                                </div>
+
+
+                                {{ else }}
+
+                                <p class=text-black">Er zijn andere nieuwsberichten </p>
+
+                                {{ /if }}
+
+                            </aside>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

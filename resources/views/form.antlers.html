@@ -23,7 +23,6 @@
         </div>
 </section>
 
-{{ form:contact }}
 <section class="text-gray-700 body-font relative">
     <div class="container px-5 p-4 mx-auto mb-5">
         <div class="flex flex-col text-center w-full mb-12">
@@ -31,53 +30,74 @@
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
         </div>
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-1/2">
-                    <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
-                </div>
-                <div class="p-2 w-1/2">
-                    <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email">
-                </div>
-                <div class="p-2 w-full">
-                    <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
-                </div>
-                <div class="p-2 w-full">
-                    <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                </div>
 
 
+        </div>
 
-                {{ if success }}
-                <div class="bg-green-300 text-white p-2">
-                    {{ success }}
-                </div>
-                {{ else }}
+    </div>
 
-                {{ if errors }}
-                <div class="bg-red-300 text-white p-2">
-                    {{ errors }}
-                    {{ value }}<br>
-                    {{ /errors }}
-                </div>
-                {{ /if }}
-
-                {{ fields }}
-                <div class="p-2">
-                    <label>{{ display }}</label>
-                    <div class="p-1">{{ field }}</div>
-                    {{ if error }}
-                    <p class="text-gray-500">{{ error }}</p>
-                    {{ /if }}
-                </div>
-                {{ /fields }}
-
-                <button type="submit">Submit</button>
-                {{ /if }}
+    {{ form:contact }}
+    <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col text-center w-full ">
 
             </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            {{ if success }}
+                            <div class="bg-green-300 text-white p-2">
+                                {{ success }}
+                            </div>
+                            {{ else }}
+
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            {{ if errors }}
+                            <div class="bg-red-300 text-white p-2">
+                                {{ errors }}
+                                {{ value }}<br>
+                                {{ /errors }}
+                            </div>
+                            {{ /if }}
+
+
+
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+
+                            {{ fields }}
+
+                            <div class="p-2">
+                                <label>{{ display }}</label>
+
+                                <div class="p-1">{{ field }}</div>
+
+                                {{ if error }}
+
+                                <p class="text-gray-500">{{ error }}</p>
+                                {{ /if }}
+
+                            </div>
+
+                            {{ /fields }}
+
+                            <button class="ml-3 mb-10 mt-10" type="submit">Submit</button>
+
+                            {{ /if }}
+
+                            {{ /form:contact }}
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-</section>
-
-

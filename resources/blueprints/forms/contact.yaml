@@ -19,12 +19,17 @@ sections:
           icon: text
           listable: hidden
       -
-        handle: message
+        handle: telefoonnummer
         field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Message
-          type: assets
-          icon: assets
+          input_type: text
+          display: Telefoonnummer
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: bericht
+        field:
+          display: Bericht
+          type: textarea
+          icon: textarea
           listable: hidden

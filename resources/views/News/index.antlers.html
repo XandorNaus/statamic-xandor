@@ -1,62 +1,75 @@
-<div class="w-full py-56 shadow-2xl px-34 bg-cover bg-no-repeat bg-center relative z-30" style="background-image: url('https://images.pexels.com/photos/374016/pexels-photo-374016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+<div class="w-full py-56 object-cover  px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+
+    <div class="container max-w-7xl mx-auto">
+    </div>
 
 </div>
 
-</div>
-<div class="container mb-20 mx-auto">
 
-    <div class="max-w-screen-xl mx-auto mt-16 ">
-        <h1 class="text-2xl leading-tight mb-1 font-semibold ml-6 font-bold text-center text-pink tracking-tight"> {{title}}</h1>
+<section class="text-gray-700 py-8 mb-10 mt-5 bg-white body-font">
+    <div id="news">
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center"> {{title}}</h1>
+        <div class="bg-pink h-1 w-24 m-auto "></div>
 
 
-        {{ collection:news paginate="6" as="news" }}
+        <div class="w-full  text-left bg-white-300 text-pink leading-normal">
+            <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
 
-        <div class="grid grid-cols-3 space-x-1 grid-cols-2 gap-8 mt-16 ">
+                <div class="flex text-black flex-wrap pb-16">
 
-            {{ news }}
+                    <div class="container mx-auto">
 
-            <a href=" {{ url }}" class="w-full  h-full flex-1 border-black shadow hover:shadow-lg transition rounded transform motion-reduce:transform-none hover border-1 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
+                        {{ collection:news paginate="6" as="news" }}
 
-                <img class="h-64 w-80" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+                        <div class="grid grid-cols-3 flex w-full mt-5 -mx-2">
 
-                <article class="p-2 ">
-                    <div class ="flex items-center">
+                            {{ news }}
 
-                        <div class="leading-tight">
+                            <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
 
-                            <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
+                                <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+
+                                <article class="p-2 ">
+                                    <div class ="flex items-center">
+
+                                        <div class="leading-tight">
+
+                                            <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
+                                        </div>
+                                    </div>
+
+
+                                    <p class="text-sm text-gray-600"> {{ date }} </p>
+                                </article>
+
+                            </a>
+
+                            {{ /news }}
+
+                        </div>
+                        {{ /collection:news }}
+
                         </div>
                     </div>
-
-
-                    <p class="text-sm text-gray-600"> {{ date }} </p>
-                </article>
-
-            </a>
-
-            {{ /news }}
+                </div>
+            </div>
 
         </div>
+</section>
 
-        </div>
-        {{ paginate }}
-
-
-        <div class="flex items-center justify-center mt-10 space-x-8 text-center mx-auto">
-
-            <a href=" {{ prev_page }}"> Previous page</a>
-
-            {{ current_page }} of {{ total_pages }} pages
+        <section class="text-gray-700 bg-pink body-font">
+            <div class="container px-5 py-16 text-center text-white mx-auto">
 
 
-            <a href="{{ next-page }}"> Next page</a>
+                <h1 class="text-3xl font-medium title-font text-white mb-10 text-center"> {{ titel_blok_1 }}</h1>
+                <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
 
-        </div>
+                    <p class ="mb-5" {{ content }} </p>
+                    <a href="/nettt">
+                        <button class="rounded bg-white items-center text-pink px-4 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            Lees verder &raquo;
+                        </button> </a>
 
-        {{ /paginate }}
-        {{ /collection:news }}
-
-    </div>
-</div>
-
-
+                </div>
+            </div>
+        </section>

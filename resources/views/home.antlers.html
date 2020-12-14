@@ -1,7 +1,5 @@
+<div class="w-full py-64   shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
-<!-- slider -->
-
-<div class="w-full py-64  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
 
     <div class="container max-w-7xl mx-autor">
@@ -13,8 +11,7 @@
 
 </div>
 
-<!-- /slider -->
-<!-- home content -->
+
 <section class="text-gray-700 bg-pink body-font">
     <div class="container px-5 py-16 text-center text-white mx-auto">
 
@@ -33,31 +30,30 @@
 </section>
 
 
-<!-- /nieuws -->
 <section class="text-gray-700 py-6 mb-10 mt-5 bg-white body-font">
     <div id="news">
         <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Nieuws</h1>
         <div class="bg-pink h-1 w-24 m-auto "></div>
 
 
-        <div class="w-full px-10 py-3 text-left bg-white-300 text-pink leading-normal">
+        <div class="w-full  text-left bg-white-300 text-pink leading-normal">
             <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
 
                 <div class="flex text-black flex-wrap pb-16">
 
                     <div class="container mx-auto">
 
-                        <div class="max-w-screen-xl mx-auto">
+                        <div class="container mx-auto">
 
                             {{ collection:news paginate="3" as="news" }}
 
-                            <div class="grid grid-cols-3 space-x-1 grid-cols-2 gap-8 mt-16 ">
+                            <div class="grid grid-cols-3 flex w-full mt-5 -mx-2">
 
                                 {{ news }}
 
-                                <a href=" {{ url }}" class="w-full  h-full flex-1 border-black shadow hover:shadow-lg transition rounded transform motion-reduce:transform-none hover border-1 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
+                                <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
 
-                                    <img class="h-64 w-80" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+                                    <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
 
                                     <article class="p-2 ">
                                         <div class ="flex items-center">
@@ -86,7 +82,7 @@
 
             <div class="text-center">
                 <a href="/nieuws">
-                <button class="rounded bg-pink items-center text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                <button class="rounded bg-pink items-center mb-7 text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                     Bekijk alle nieuwsberichten &raquo;
                 </button> </a>
             </div>
@@ -95,13 +91,12 @@
 </section>
 
 
-<!-- /home content -->
+<section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ image_blok_2 }}');background-position: center">
 
-<!-- about -->
-<section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="background-image: url('https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/121197731_3970574902993108_9165789037331815850_o.jpg?_nc_cat=102&ccb=2&_nc_sid=2c4854&_nc_ohc=c5RZHzQ8ATMAX-4xAkr&_nc_ht=scontent-amt2-1.xx&oh=00cd61cb731be62a3eadccfc39d4e226&oe=5FF200EF');">
+
     <div class="container px-5 py-24 mx-auto">
 
-        <div class="flex flex-wrap  -m-4" >
+        <div class="flex flex-wrap flex w-100 flex-wrap  lg:flex -m-4" >
 
 
             <div class="h-full bg-white shadow-xl bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-7 text-center"> {{ titel_blok_2 }} </h1>
@@ -125,7 +120,6 @@
         </div>
 </section>
 
-<!-- /about -->
 
 <div class="block block-hotspots  bg-gray-200 py-16">
 
@@ -150,89 +144,116 @@
                                 <button class="mt-10 rounded bg-white items-center text-pink px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                                     Lees verder &raquo;
                                 </button> </a>
-                        </div>
-
-
-
+                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
-<!-- /nieuws -->
-<section class="text-gray-700 py-6 mb-10 mt-5 bg-white body-font">
+
+<section class="text-gray-700 py-6 mb-10  bg-white body-font">
     <div id="news">
-        <h1 class="text-3xl font-bold title-font text-pink  mb-5 text-center">Projecten</h1>
-        <div class="bg-pink h-1 w-24 m-auto "></div>
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Onze projecten</h1>
+        <div class="bg-pink h-1 w-24 m-auto ">
 
 
-        <div class="w-full px-10 py-3 text-left bg-white-300 text-pink leading-normal">
-            <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+
+        </div>
+
+
+        <div class="mx-auto text-left bg-white-300 text-pink leading-normal">
+            <div class="container max-w7xl mx-auto flex justify-center mx-auto md:flex-no-wrap">
 
                 <div class="flex text-black flex-wrap pb-16">
 
                     <div class="container mx-auto">
 
-                        <div class="max-w-screen-xl mx-auto">
+                        <div class="container mx-auto">
 
-                            {{ collection:projects paginate="3" as="projects" }}
+                            <div class="mx-auto">
 
-                            <div class="grid grid-cols-3 space-x-1 grid-cols-2 gap-8 mt-16 ">
+                                <div class="container mx-auto">
 
-                                {{ projects }}
+                                    {{ collection:projects paginate="3" as="projects" }}
 
-                                <a href=" {{ url }}" class="w-full  h-full flex-1 border-black shadow hover:shadow-lg transition rounded transform motion-reduce:transform-none hover border-1 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
+                                    <div class="grid grid-cols-3 flex w-full mt-5 -mx-2">
 
-                                    <img class="h-64 w-80" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+                                        {{ projects }}
 
-                                    <article class="p-2 ">
-                                        <div class ="flex items-center">
+                                        <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
 
-                                            <div class="leading-tight">
+                                            <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
 
-                                                <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
-                                            </div>
-                                        </div>
+                                            <article class="p-2 ">
+                                                <div class ="flex items-center">
+
+                                                    <div class="leading-tight">
+
+                                                        <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
+                                                    </div>
+                                                </div>
 
 
-                                        <p class="text-sm text-gray-600"> {{ date }} </p>
-                                    </article>
+                                                <p class="text-sm text-gray-600"> {{ date }} </p>
+                                            </article>
 
-                                </a>
+                                        </a>
 
-                                {{ /projects }}
+                                        {{ /projects }}
 
+                                    </div>
+                                    {{ /collection:projects }}
+
+                                </div>
                             </div>
-                            {{ /collection:projects }}
 
-                        </div>
+
+                    <div class="mt-16 text-center">
+                        <a href="/nieuws">
+                            <button class="rounded bg-pink items-center text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                Bekijk alle projecten &raquo;
+                            </button> </a>
                     </div>
                 </div>
-            </div>
-
-            <div class="text-center">
-                <a href="/projects">
-                    <button class="rounded bg-pink items-center text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                        Bekijk al onze projecten &raquo;
-                    </button> </a>
-            </div>
-        </div>
 
 </section>
 
 
-
-
-
 <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="background-image: url('https://images.pexels.com/photos/273214/pexels-photo-273214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
     <div class="container px-9 py-24 mx-auto">
+        {{ pages }}
 
-        <div class="flex flex-wrap m-4" >
-            <div class="p-4 md:w-1/2 w-full" >
-                <div class="h-full bg-pink bg-gray-200 shadow-xl p-8 rounded"> <h1 class="text-3xl font-medium title-font text-white mb-5 text-center">Locatie</h1>
+        {{ my_replicator_field }}
+
+        {{ if type == "content_set" }}
+
+        <div class="text">
+            {{ text|markdown }}
+        </div>
+
+        {{ elseif type == "quote_set" }}
+
+        <setquote>{{ quote }}</setquote>
+        <p>&mdash; {{ cite }}</p>
+
+        {{ elseif type == "image_set" }}
+
+        <figure>
+            <img src="{{ photo }}" alt="{{ caption }}" />
+            <figcaption>{{ caption }}</figcaption>
+        </figure>
+
+        {{ endif }}
+
+        {{ /my_replicator_field }}
+
+        {{ /pages }}
+
+        <div class="flex flex-wrap -mx-2" >
+            <div class="md:w-1/2" >
+                <div class="h-full bg-pink bg-gray-200 shadow-xl p-8 mx-2 rounded"> <h1 class="text-3xl font-medium title-font text-white mb-5 text-center">Locatie</h1>
 
                     <p class="text-white leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
 
@@ -242,8 +263,8 @@
                     </button> </a>
                 </div>
             </div>
-            <div class="p-4 md:w-1/2 w-full">
-                <div class="h-full bg-white bg-gray-200 shadow-xl p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-5 text-center">Contact</h1>
+            <div class=" md:w-1/2 ">
+                <div class="h-full bg-white bg-gray-200 shadow-xl p-8 mx-2 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-5 text-center">Contact</h1>
 
                     <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
 
@@ -257,3 +278,4 @@
         </div>
     </div>
 </section>
+

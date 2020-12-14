@@ -17,7 +17,7 @@ fields:
 
     handle: message
     field:
-      display: Bericht
+      display: Bericht (english)
       type: text
       validate: required
 

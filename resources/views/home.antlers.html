@@ -7,38 +7,38 @@
 
 
 
-    <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ achtergrondfoto }}');background-position: center">
+        <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ achtergrondfoto }}');background-position: center">
 
-        <div class="container px-5 py-24 mx-auto">
+            <div class="container px-5 py-24 mx-auto">
 
-            <div class="flex flex-wrap flex w-100 flex-wrap  lg:flex -m-4" >
+                <div class="flex flex-wrap flex w-100 flex-wrap  lg:flex -m-4" >
 
 
-                <div class="h-full bg-white shadow-xl bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-7 text-center"> {{ text|markdown }} </h1>
+                    <div class="h-full bg-white shadow-xl bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-7 text-center"> {{ text|markdown }} </h1>
 
-                    <div class="xl:w-1/2 lg:w-3/4 w-full text-whitte mx-auto text-center">
+                        <div class="xl:w-1/2 lg:w-3/4 w-full text-whitte mx-auto text-center">
 
-                        <p class="mb-10 font-light"> {{ tekstveld|markdown }} </p>
+                            <p class="mb-10 font-light"> {{ tekstveld|markdown }} </p>
 
-                        <a href="">
-                            <button class="rounded bg-pink mt-10 items-center text-white px-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                                {{ knoptekst|markdown }}
-                            </button> </a>
+                            <a href="">
+                                <button class="rounded bg-pink mt-10 items-center text-white px-6 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                    {{ knoptekst|markdown }}
+                                </button> </a>
 
-                        <svg class="animate-bounce w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                        </svg>
+                            <svg class="animate-bounce w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+
+                        </div>
 
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    </section>
+        </section>
 
-    {{ elseif type == "news_set" }}
+        {{ elseif type == "news_set" }}
 
         <section class="text-gray-700 py-6 mb-10 mt-5 bg-white body-font">
             <div id="news">
@@ -92,7 +92,7 @@
 
                     <div class="text-center">
                         <a href="/nieuws">
-                            <button class="rounded bg-pink items-center mb-7 text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            <button class="rounded bg-pink items-center mb-7 text-white px-6 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                                 {{ knoptekst|markdown }}
                             </button> </a>
                     </div>
@@ -157,7 +157,7 @@
 
                     <div class="text-center">
                         <a href="/nieuws">
-                            <button class="rounded bg-pink items-center mb-7 text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            <button class="rounded bg-pink items-center mb-7 text-white px-6 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                                 {{ knoptekst|markdown }}
                             </button> </a>
                     </div>
@@ -179,7 +179,7 @@
 
                     <p class ="mb-5"> {{ tekstveld|markdown }} </p>
                     <a href="/nettt">
-                        <button class="rounded bg-white items-center text-pink px-4 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                        <button class="rounded bg-white items-center text-pink px-8 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                             {{ knoptekst|markdown }}
                         </button> </a>
 
@@ -196,15 +196,12 @@
             <div class="container max-w-7xl mx-autor">
             </div>
 
-            <svg class="w-full bg-cover w-full object-top mt-48 animate-bounce text-center w-6 h-8 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
 
         </div>
 
         {{ elseif type == "2_blokken_set" }}
 
-        <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover bg-black  w-full " style="background-image: url('https://www.arccommunicatie.nl/wp-content/uploads/2019/03/MVB20190214-240-1920x860-c-default.jpg');">
+        <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ achtergrond_foto }}'); background-position: center">
             <div class="container px-9 py-24 mx-auto">
 
                 <div class="flex space-x-4 ...">
@@ -215,8 +212,8 @@
                         <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_1 }} </p>
 
                         <a href="/nettt">
-                            <button class="rounded mt-5 bg-pink font-medium items-center text-white px-4 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                                {{ knoptekst_1 }}
+                            <button class="rounded mt-5 bg-pink font-medium items-center text-white px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                {{ knoptekst_2 }}
                             </button> </a>
 
                     </div>
@@ -225,10 +222,10 @@
 
 
                         <h1 class="text-3xl font-medium title-font text-white mb-5text-center"> {{ titel_2 }}</h1>
-                        <p class="leading-relaxed text-white mt-3 mb-3"> {{ tekstveld_2 }} </p>
+                        <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_2 }} </p>
 
                         <a href="/nettt">
-                            <button class="rounded mt-5 bg-white font-medium items-center text-pink px-4 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            <button class="rounded mt-5 bg-white font-medium items-center text-pink px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
                                 {{ knoptekst_2 }}
                             </button> </a>
 
@@ -242,11 +239,77 @@
 </div>
 </section>
 
-        {{ endif }}
+{{ elseif type == "2_blokken_no_set" }}
 
-    </section>
+<section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full  " style="background-image: url(' {{ achtergrond_foto }} ');">
+    <div class="container px-9 py-24 mx-auto">
 
-    {{ /my_replicator_field }}
+        <div class="flex space-x-4 ...">
+            <div class="flex-1 h-full bg-white bg-gray-200 shadow-xl p-8 mx-2 rounded">
+
+
+                <h1 class="text-3xl font-medium title-font text-pink mb-5text-center"> {{ titel_1 }}</h1>
+                <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_1 }} </p>
+
+                <a href="/nettt">
+                    <button class="rounded mt-5 bg-pink font-medium items-center text-white px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                        {{ knoptekst_2 }}
+                    </button> </a>
+
+            </div>
+
+            <div class="flex-1 h-full bg-pink bg-gray-200 text-white shadow-xl p-8 mx-2 rounded">
+
+
+                <h1 class="text-3xl font-medium title-font text-white mb-5text-center"> {{ titel_2 }}</h1>
+                <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_2 }} </p>
+
+                <a href="/nettt">
+                    <button class="rounded mt-5 bg-white font-medium items-center text-pink px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                        {{ knoptekst_2 }}
+                    </button> </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+{{ elseif type == "text_slug_set" }}
+
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col
+            text-left  w-full mb-7">
+            <p>/{{slug}}</p>
+
+            <h1 class="sm:text-3xl text-2xl mt-3 text-left font-bold text-pink title-font mb-4 text-gray-900"> {{ titel_blok }}</h1>
+
+            <p> {{ tekstveld }} </p>
+
+
+        </div>
+
+        <a href="/">
+            <button  class="rounded bg-pink items-center  text-white px-8 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
+                {{ knoptekst }}
+                &raquo;
+            </button> </a>
+
+    </div>
+</section>
+
+{{ endif }}
+
+</section>
+
+{{ /my_replicator_field }}
 </div>
+
 
 

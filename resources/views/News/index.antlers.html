@@ -1,76 +1,306 @@
-<div class="w-full py-56 object-cover  px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+<div>
+    {{ my_replicator_field }}
 
-    <div class="container max-w-7xl mx-auto">
-    </div>
+    {{ if type == "content_set" }}
 
-</div>
-
-
-<section class="text-gray-700 py-8 mb-10 mt-5 bg-white body-font">
-    <div id="news">
-        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-2 text-center"> Laatste {{title}}</h1>
-        <p class="text-center"> Hier vindt je de recente nieuwsberichten van Nettt Interactieve Media.</p>
-        <div class="bg-pink h-1 w-24 m-auto mt-5 "></div>
+    <div class="text">
 
 
-        <div class="w-full  text-left bg-white-300 text-pink leading-normal">
-            <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
 
-                <div class="flex text-black flex-wrap pb-16">
+        <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ achtergrondfoto }}');background-position: center">
 
-                    <div class="container mx-auto">
+            <div class="container px-5 py-24 mx-auto">
 
-                        {{ collection:news paginate="6" as="news" }}
-
-                        <div class="grid grid-cols-3 flex w-full mt-5 -mx-2">
-
-                            {{ news }}
-
-                            <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
-
-                                <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
-
-                                <article class="p-2 ">
-                                    <div class ="flex items-center">
-
-                                        <div class="leading-tight">
-
-                                            <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
-                                        </div>
-                                    </div>
+                <div class="flex flex-wrap flex w-100 flex-wrap  lg:flex -m-4" >
 
 
-                                    <p class="text-sm text-gray-600"> {{ date }} </p>
-                                </article>
+                    <div class="h-full bg-white shadow-xl bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-7 text-center"> {{ text|markdown }} </h1>
 
-                            </a>
+                        <div class="xl:w-1/2 lg:w-3/4 w-full text-whitte mx-auto text-center">
 
-                            {{ /news }}
+                            <p class="mb-10 font-light"> {{ tekstveld|markdown }} </p>
+
+                            <a href="">
+                                <button class="rounded bg-pink mt-10 items-center text-white px-6 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                    {{ knoptekst|markdown }}
+                                </button> </a>
+
+                            <svg class="animate-bounce w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
 
                         </div>
-                        {{ /collection:news }}
 
-                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-</section>
+        </section>
+
+        {{ elseif type == "news_set" }}
+
+        <section class="text-gray-700 py-6 mb-10 mt-5 bg-white body-font">
+            <div id="news">
+                <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-2 text-center">{{ title|markdown }}</h1>
+                <p class="text-center mb-10"> {{ subtitle }}</p>
+                <div class="bg-pink h-1 w-24 m-auto "></div>
+
+
+                <div class="w-full  text-left bg-white-300 text-pink leading-normal">
+                    <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+
+                        <div class="flex text-black flex-wrap pb-16">
+
+                            <div class="container mx-auto">
+
+                                <div class="container mx-auto">
+
+                                    {{ collection:news paginate="6" as="news" }}
+
+                                    <div class="grid grid-cols-3  flex w-full mt-5 -mx-2">
+
+                                        {{ news }}
+
+                                        <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
+
+                                            <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+
+                                            <article class="p-2 ">
+                                                <div class ="flex items-center">
+
+                                                    <div class="leading-tight">
+
+                                                        <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
+                                                    </div>
+                                                </div>
+
+
+                                                <p class="text-sm text-gray-600"> {{ date }} </p>
+                                            </article>
+
+                                        </a>
+
+                                        {{ /news }}
+
+                                    </div>
+                                    {{ /collection:news }}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </section>
+
+
+        </section>
+
+        {{ elseif type == "projects_set" }}
+
+        <section class="text-gray-700 py-6 mb-10 mt-5 bg-white body-font">
+            <div id="projects">
+                <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-2 text-center">{{ title|markdown }}</h1>
+                <p class="text-center mb-10"> {{ subtitle }}</p>
+                <div class="bg-pink h-1 w-24 m-auto "></div>
+
+
+                <div class="w-full  text-left bg-white-300 text-pink leading-normal">
+                    <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+
+                        <div class="flex text-black flex-wrap pb-16">
+
+                            <div class="container mx-auto">
+
+                                <div class="container mx-auto">
+
+                                    {{ collection:projects paginate="6" as="projects" }}
+
+                                    <div class="grid grid-cols-3  flex w-full mt-5 -mx-2">
+
+                                        {{ projects }}
+
+                                        <a href=" {{ url }}" class="mt-5 block mx-2 rounded transform motion-reduce:transform-none hover border-2 rounded border-gray :-translate-y-1 hover:scale-90 transition ease-in-out duration-300">
+
+                                            <img class="object-cover  h-56 w-full" transform src="{{ image }}" width="600" height="300"  alt="{{ image:alt }}" class="rounded-t">
+
+                                            <article class="p-2 ">
+                                                <div class ="flex items-center">
+
+                                                    <div class="leading-tight">
+
+                                                        <h2 class="text-1xl font-bold text-pink leading-tight mt-1"> {{ title }} </h2>
+                                                    </div>
+                                                </div>
+
+
+                                                <p class="text-sm text-gray-600"> {{ date }} </p>
+                                            </article>
+
+                                        </a>
+
+                                        {{ /projects }}
+
+                                    </div>
+                                    {{ /collection:projects }}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        </section>
+
+        {{ elseif type == "landing_set" }}
 
         <section class="text-gray-700 bg-pink body-font">
             <div class="container px-5 py-16 text-center text-white mx-auto">
 
 
-                <h1 class="text-3xl font-medium title-font text-white mb-10 text-center"> {{ titel_blok_1 }}</h1>
+                <h1 class="text-3xl font-medium title-font text-white mb-5 text-center"> {{ title }}</h1>
                 <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
 
-                    <p class ="mb-5" {{ content }} </p>
+                    <p class ="mb-5"> {{ tekstveld|markdown }} </p>
                     <a href="/nettt">
-                        <button class="rounded bg-white items-center text-pink px-4 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                            Lees verder &raquo;
+                        <button class="rounded bg-white items-center text-pink px-8 mt-7 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            {{ knoptekst|markdown }}
                         </button> </a>
 
                 </div>
             </div>
         </section>
+
+        {{ elseif type == "omslagfoto_set" }}
+
+        <div class="w-full py-64   shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ omslagfoto }}');background-position: center">
+
+
+
+            <div class="container max-w-7xl mx-autor">
+            </div>
+
+
+        </div>
+
+        {{ elseif type == "2_blokken_set" }}
+
+        <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top"  style="background-image: url('{{ achtergrond_foto }}'); background-position: center">
+            <div class="container px-9 py-24 mx-auto">
+
+                <div class="flex space-x-4 ...">
+                    <div class="flex-1 h-full bg-white bg-gray-200 shadow-xl p-8 mx-2 rounded">
+
+
+                        <h1 class="text-3xl font-medium title-font text-pink mb-5text-center"> {{ titel_1 }}</h1>
+                        <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_1 }} </p>
+
+                        <a href="/nettt">
+                            <button class="rounded mt-5 bg-pink font-medium items-center text-white px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                {{ knoptekst_2 }}
+                            </button> </a>
+
+                    </div>
+
+                    <div class="flex-1 h-full bg-pink bg-gray-200 text-white shadow-xl p-8 mx-2 rounded">
+
+
+                        <h1 class="text-3xl font-medium title-font text-white mb-5text-center"> {{ titel_2 }}</h1>
+                        <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_2 }} </p>
+
+                        <a href="/nettt">
+                            <button class="rounded mt-5 bg-white font-medium items-center text-pink px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                                {{ knoptekst_2 }}
+                            </button> </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+</div>
+</div>
+</section>
+
+{{ elseif type == "2_blokken_no_set" }}
+
+<section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full  " style="background-image: url(' {{ achtergrond_foto }} ');">
+    <div class="container px-9 py-24 mx-auto">
+
+        <div class="flex space-x-4 ...">
+            <div class="flex-1 h-full bg-white bg-gray-200 shadow-xl p-8 mx-2 rounded">
+
+
+                <h1 class="text-3xl font-medium title-font text-pink mb-5text-center"> {{ titel_1 }}</h1>
+                <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_1 }} </p>
+
+                <a href="/nettt">
+                    <button class="rounded mt-5 bg-pink font-medium items-center text-white px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                        {{ knoptekst_2 }}
+                    </button> </a>
+
+            </div>
+
+            <div class="flex-1 h-full bg-pink bg-gray-200 text-white shadow-xl p-8 mx-2 rounded">
+
+
+                <h1 class="text-3xl font-medium title-font text-white mb-5text-center"> {{ titel_2 }}</h1>
+                <p class="leading-relaxed text-black mt-3 mb-3"> {{ tekstveld_2 }} </p>
+
+                <a href="/nettt">
+                    <button class="rounded mt-5 bg-white font-medium items-center text-pink px-8 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                        {{ knoptekst_2 }}
+                    </button> </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+{{ elseif type == "text_slug_set" }}
+
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col
+            text-left  w-full mb-7">
+            <p>/{{slug}}</p>
+
+            <h1 class="sm:text-3xl text-2xl mt-3 text-left font-bold text-pink title-font mb-4 text-gray-900"> {{ titel_blok }}</h1>
+
+            <p> {{ tekstveld }} </p>
+
+
+        </div>
+
+        <a href="/">
+            <button  class="rounded bg-pink items-center  text-white px-8 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80transition ease-in-out duration-300 ...">
+                {{ knoptekst }}
+                &raquo;
+            </button> </a>
+
+    </div>
+</section>
+
+{{ endif }}
+
+</section>
+
+{{ /my_replicator_field }}
+</div>
+
+
+

@@ -1,11 +1,12 @@
 <div class="max-w-4xl mx-auto">
 
-    <h1 class="text-8xl font-black text-center"> {{ title }}</h1>
+    <div id="news">
+    <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-2 text-center">{{ title }}</h1>
+    <div class="bg-pink h-1 w-24 m-auto "></div>
 
     {{ entries paginate="4" as="news" }}
 
     <div class="grid grid-flow-row grid-cols-2 gap-8 my-16">
-
         {{ news }}
 
         {{ partial:news/card }}
@@ -16,4 +17,5 @@
 
     {{ /entries }}
 
+</div>
 </div>

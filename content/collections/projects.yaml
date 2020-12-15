@@ -1,9 +1,22 @@
 title: Projects
-template: Projecten/index
+template: Projects/show
 layout: layout
+taxonomies:
+  - tags
+  - marc
 revisions: false
-route: /products
+route: '/projects/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public
   future: private
+structure:
+  root: false
+  tree:
+    -
+      entry: 43e3aabf-dcdd-467e-81f0-990e119822d9
+    -
+      entry: 8f70ec76-421c-4554-aa65-66ec22d3946a
+    -
+      entry: c8d4cf2a-9554-4398-9094-5ce03a9a6846

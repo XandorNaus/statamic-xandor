@@ -10,80 +10,6 @@ sections:
           required: true
           validate:
             - required
-          listable: hidden
-          input_type: text
-      -
-        handle: image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Omslagfoto
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions: 'Upload hier de omslagfoto van je pagina.'
-          container: assets
-          folder: /
-          max_files: 1
-      -
-        handle: titel_blok_1
-        field:
-          input_type: text
-          display: 'Titel Blok 1'
-          type: text
-          icon: text
-          listable: hidden
-          instructions: 'Plaats hier de titel van je eerste blok.'
-          character_limit: 25
-      -
-        handle: content
-        field:
-          always_show_set_button: false
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - table
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: true
-          fullscreen: true
-          allow_source: true
-          display: 'Contentblok 1'
-          type: bard
-          icon: bard
-          listable: hidden
-          instructions: 'Plaats hier de content voor je eerste blok.'
-      -
-        handle: image_blok_1
-        field:
-          mode: grid
-          container: assets
-          folder: /
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'Image Blok 1'
-          type: assets
-          icon: assets
-          listable: hidden
-      -
-        handle: template
-        field:
-          type: template
-          display: Template
-          localizable: true
       -
         handle: my_replicator_field
         field:
@@ -176,6 +102,16 @@ sections:
                     type: text
                     icon: text
                     listable: hidden
+                -
+                  handle: subtitle
+                  field:
+                    input_type: text
+                    character_limit: 20
+                    antlers: false
+                    display: Subtitel
+                    type: text
+                    icon: text
+                    listable: hidden
             projects_set:
               display: projects_set
               fields:
@@ -196,6 +132,16 @@ sections:
                     character_limit: 10
                     antlers: false
                     display: Knoptekst
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: subtitle
+                  field:
+                    input_type: text
+                    character_limit: 20
+                    antlers: false
+                    display: Subtitiel
                     type: text
                     icon: text
                     listable: hidden
@@ -303,7 +249,7 @@ sections:
                     icon: text
                     listable: hidden
                 -
-                  handle: achtegrond_foto
+                  handle: achtergrond_foto
                   field:
                     mode: grid
                     container: assets
@@ -311,7 +257,7 @@ sections:
                     restrict: false
                     allow_uploads: true
                     max_files: 1
-                    display: 'Achtegrond foto'
+                    display: 'Achtergrond foto'
                     type: assets
                     icon: assets
                     listable: hidden
@@ -384,10 +330,166 @@ sections:
                     icon: assets
                     instructions: 'Upload hier de omslagfoto van je pagina.'
                     listable: hidden
+            text_slug_set:
+              display: text_slug_set
+              fields:
+                -
+                  handle: titel_blok
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: 'Titel blok'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: tekstveld
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: Tekstveld
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                -
+                  handle: knoptekst
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: Knoptekst
+                    type: text
+                    icon: text
+                    listable: hidden
+            2_blokken_no_set:
+              display: 2_blokken_no_set
+              fields:
+                -
+                  handle: titel_blok_1
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: 'Titel Blok 1'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: tekstveld_1
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: Tekstveld
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                -
+                  handle: knoptekst_1
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: 'Knoptekst 1'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: title_blok_2
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: 'Title Blok 2'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: tekstveld_2
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: 'Tekstveld 2'
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                -
+                  handle: knoptekst_2
+                  field:
+                    input_type: text
+                    character_limit: 10
+                    antlers: false
+                    display: 'Knoptekst 2'
+                    type: text
+                    icon: text
+                    listable: hidden
           display: my_replicator_field
           type: replicator
           icon: replicator
           listable: hidden
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
   sidebar:
     display: Sidebar
     fields:

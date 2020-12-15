@@ -8,33 +8,18 @@ sections:
         field:
           type: text
           required: true
+          input_type: text
+          character_limit: 10
+          antlers: false
+          display: Titel
+          icon: text
+          listable: hidden
           validate:
             - required
       -
-        handle: subtitle
-        field:
-          input_type: text
-          display: Subtitle
-          type: text
-          icon: text
-          listable: hidden
-      -
-        handle: image
-        field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          folder: /
-          max_files: 1
-      -
         handle: project_content
         field:
-          always_show_set_button: true
+          always_show_set_button: false
           buttons:
             - h2
             - h3
@@ -55,36 +40,33 @@ sections:
           reading_time: false
           fullscreen: true
           allow_source: true
-          display: 'Project Content'
+          display: 'Project content'
           type: bard
           icon: bard
           listable: hidden
       -
-        handle: url_project
+        handle: image
         field:
-          display: URL
-          type: link
-          icon: link
+          mode: grid
+          container: assets
+          folder: /
+          restrict: false
+          allow_uploads: true
+          display: 'Project foto'
+          type: assets
+          icon: assets
           listable: hidden
-      -
-        handle: author
-        field:
-          mode: select
-          display: Author
-          type: users
-          icon: users
-          listable: hidden
+          max_files: 1
       -
         handle: related_projects
         field:
           mode: select
-          display: 'Related Projects'
+          collections:
+            - projects
+          display: 'Related projects'
           type: entries
           icon: entries
           listable: hidden
-          collections:
-            - projects
-          max_items: 3
   sidebar:
     display: Sidebar
     fields:
@@ -123,6 +105,14 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
   meta_data:
     display: 'Meta Data'
     fields:

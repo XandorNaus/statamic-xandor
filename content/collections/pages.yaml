@@ -1,14 +1,24 @@
 title: Pages
+template: default
+layout: layout
 revisions: false
-route: '{parent_uri}/{slug}'
+route: '/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
 structure:
   root: true
   tree:
     -
-      entry: home
+      entry: 7710ba09-c26c-4aab-bfc2-1df29dddf6f8
     -
-      entry: 77fa2348-d4b0-4045-ad3d-d0fb97665b93
+      entry: a6d86952-18b3-4120-a279-6dbe97415642
     -
-      entry: 47414ab5-9007-4ead-818c-5653a8edbd74
+      entry: d63ab66d-6ccb-4336-816b-cc5a49f6ea66
     -
-      entry: 13ce6cc1-c2be-40d0-86cf-e0b12e488cbd
+      entry: f6abd4e6-8157-4b99-b87b-a3296dfdb300
+    -
+      entry: b034ddc3-f9da-4ddb-82a6-7548904ea41c
+    -
+      entry: 8a500852-ca3e-490a-8d73-67d2388ad9c1

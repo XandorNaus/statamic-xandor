@@ -1,9 +1,10 @@
 title: News
-template: News/index
+template: news/show
 layout: layout
+taxonomies:
+  - berichten
 revisions: false
-route: /news/
-date: true
+route: '/nieuws/{slug}'
 sort_dir: asc
 date_behavior:
   past: public

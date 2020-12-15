@@ -33,7 +33,6 @@
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/intervention/httpauth" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
@@ -47,7 +46,6 @@
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/statamic/stringy" />
       <path value="$PROJECT_DIR$/vendor/statamic/cms" />
-      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
@@ -96,7 +94,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/tubalmartin/cssmin" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/react/promise" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
@@ -114,15 +111,12 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/mrclay/props-dic" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/mrclay/minify" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/league/csv" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/mrclay/jsmin-php" />
       <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/pixelfear/composer-dist-plugin" />
@@ -149,7 +143,6 @@
       <path value="$PROJECT_DIR$/vendor/ueberdosis/html-to-prosemirror" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/marcusschwarz/lesserphp" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
@@ -166,18 +159,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../den-elzen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/projects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\dev\statamic-xandor\resources\views" />
-      <recent name="C:\dev\statamic-xandor\resources\views\News" />
+      <recent name="C:\dev\statamic-xandor\resources\views\projects" />
+      <recent name="C:\dev\statamic-xandor\resources\views\news\berichten" />
+      <recent name="C:\dev\statamic-xandor\public" />
+      <recent name="C:\dev\statamic-xandor\resources\views\Projects\categories" />
+      <recent name="C:\dev\statamic-xandor\resources\views\news" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\statamic-xandor\resources\views\Projects" />
+      <recent name="C:\dev\statamic-xandor\resources\views" />
       <recent name="C:\dev\statamic-xandor\resources\views\diensten" />
     </key>
   </component>
@@ -196,9 +195,53 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="development" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="development" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="production" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.development" />
+        <item itemvalue="npm.watch" />
+        <item itemvalue="npm.production" />
+        <item itemvalue="npm.prod" />
       </list>
     </recent_temporary>
   </component>
@@ -215,44 +258,20 @@
       <workItem from="1605771471741" duration="9696000" />
       <workItem from="1605857986264" duration="1224000" />
       <workItem from="1606134526687" duration="12000" />
+      <workItem from="1606290495883" duration="3594000" />
+      <workItem from="1607334466330" duration="8241000" />
+      <workItem from="1607344198336" duration="10086000" />
+      <workItem from="1607413189777" duration="18343000" />
+      <workItem from="1607499419431" duration="19849000" />
+      <workItem from="1607586121070" duration="25563000" />
+      <workItem from="1607671895285" duration="24082000" />
+      <workItem from="1607932830857" duration="12152000" />
+      <workItem from="1607947338056" duration="281000" />
+      <workItem from="1607948232244" duration="21376000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1606134536848">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1606134536848" />
-    <state width="1877" height="302" key="GridCell.Tab.0.bottom" timestamp="1605715054006">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605628560853" />
-    <state width="1877" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605715054006" />
-    <state width="1877" height="302" key="GridCell.Tab.0.center" timestamp="1605715054006">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="302" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605628560853" />
-    <state width="1877" height="302" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605715054006" />
-    <state width="1877" height="302" key="GridCell.Tab.0.left" timestamp="1605715054006">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="302" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605628560853" />
-    <state width="1877" height="302" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605715054006" />
-    <state width="1877" height="302" key="GridCell.Tab.0.right" timestamp="1605715054006">
-      <screen x="1920" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="302" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605628560853" />
-    <state width="1877" height="302" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605715054006" />
-    <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605627861659">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605627861659" />
-    <state x="667" y="313" width="585" height="534" key="find.popup" timestamp="1605628136826">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="667" y="313" width="585" height="534" key="find.popup/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1605628136826" />
   </component>
 </project>

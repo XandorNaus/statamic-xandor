@@ -1,0 +1,145 @@
+fields:
+  form_section:
+    type: section
+    display: Form Settings
+  captcha_service:
+    type: select
+    options:
+      Recaptcha: reCAPTCHA
+      Hcaptcha: hCaptcha
+  forms:
+    type: suggest
+    mode: form
+    instructions: Select the forms where Captcha will be used.
+  user_registration:
+    type: toggle
+    instructions: Toggle to use Captcha in User Registration form.
+  error_message:
+    type: text
+    instructions: The message that will be returned if validation fails.
+  site_key:
+    type: text
+    display: API Site Key
+    width: 50
+  secret:
+    type: text
+    display: API Secret
+    width: 50
+  extra_settings_section:
+    type: section
+    display: Extra Settings
+  invisible:
+    type: toggle
+    width: 50
+  hide_badge:
+    display: Hide reCAPTCHA Badge
+    type: toggle
+    width: 50
+    show_when:
+      captcha_service: Recaptcha
+      invisible: true
+  theme:
+    type: select
+    display: Theme
+    options:
+      light: Light
+      dark: Dark
+  language_code:
+    type: select
+    display: Language
+    instructions: Each Captcha service auto-detects the user's language if unspecified
+    options:
+      '': 'Default'
+      'ar': 'Arabic'
+      'af': 'Afrikaans'
+      'am': 'Amharic'
+      'hy': 'Armenian'
+      'az': 'Azerbaijani'
+      'eu': 'Basque'
+      'bn': 'Bengali'
+      'bg': 'Bulgarian'
+      'ca': 'Catalan'
+      'zh-HK': 'Chinese (Hong Kong)'
+      'zh-CN': 'Chinese (Simplified)'
+      'zh-TW': 'Chinese (Traditional)'
+      'hr': 'Croatian'
+      'cs': 'Czech'
+      'da': 'Danish'
+      'nl': 'Dutch'
+      'en-GB': 'English (UK)'
+      'en': 'English (US)'
+      'et': 'Estonian'
+      'fil': 'Filipino'
+      'fi': 'Finnish'
+      'fr': 'French'
+      'fr-CA': 'French (Canadian)'
+      'gl': 'Galician'
+      'ka': 'Georgian'
+      'de': 'German'
+      'de-AT': 'German (Austria)'
+      'de-CH': 'German (Switzerland)'
+      'el': 'Greek'
+      'gu': 'Gujarati'
+      'iw': 'Hebrew'
+      'hi': 'Hindi'
+      'hu': 'Hungarain'
+      'is': 'Icelandic'
+      'id': 'Indonesian'
+      'it': 'Italian'
+      'ja': 'Japanese'
+      'kn': 'Kannada'
+      'ko': 'Korean'
+      'lo': 'Laothian'
+      'lv': 'Latvian'
+      'lt': 'Lithuanian'
+      'ms': 'Malay'
+      'ml': 'Malayalam'
+      'mr': 'Marathi'
+      'mn': 'Mongolian'
+      'no': 'Norwegian'
+      'fa': 'Persian'
+      'pl': 'Polish'
+      'pt': 'Portuguese'
+      'pt-BR': 'Portuguese (Brazil)'
+      'pt-PT': 'Portuguese (Portugal)'
+      'ro': 'Romanian'
+      'ru': 'Russian'
+      'sr': 'Serbian'
+      'si': 'Sinhalese'
+      'sk': 'Slovak'
+      'sl': 'Slovenian'
+      'es': 'Spanish'
+      'es-419': 'Spanish (Latin America)'
+      'sw': 'Swahili'
+      'sv': 'Swedish'
+      'ta': 'Tamil'
+      'te': 'Telugu'
+      'th': 'Thai'
+      'tr': 'Turkish'
+      'uk': 'Ukrainian'
+      'ur': 'Urdu'
+      'vi': 'Vietnamese'
+      'zu': 'Zulu'
+  disclaimer:
+    display: Disclaimer Message
+    type: markdown
+    instructions: Only required if using hidden Invisible Captcha. A default message will be used if this field is left blank.
+  multi_keys:
+    type: toggle
+    display: Use Multiple Keys?
+  site_keys:
+    type: grid
+    fields:
+      domains:
+        type: textarea
+        width: 33
+      site_key:
+        type: text
+        display: Site Key
+        width: 33
+      secret:
+        type: text
+        width: 33
+      invisible:
+        type: toggle
+        width: 33

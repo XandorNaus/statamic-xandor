@@ -6,62 +6,59 @@
 
 </head>
 
-<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+<div class="w-full py-56 shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
 <div class="container max-w-7xl mx-auto text-center">
     </div>
 
 </div>
 
-<!-- /home content -->
-
-<!-- about -->
-<section class="bg-no-repeat bg-center text-gray-700 object-cover  text-center body-font color w-full object-top">
+<section class="bg-no-repeat bg-center text-center w-full bg-cover w-full object-top" style="background-image: url('');">
     <div class="container px-9 py-24 mx-auto">
 
-        <div class="flex flex-wrap" >
-            <div class="md:w-1/2 " >
-                <div class="h-full bg-white bg-gray-200 p-8 rounded object-cover bg-no-repeat bg-center w-full bg-cover w-full object-top"  style="background-image: url('{{ image_blok_1 }}');background-position: center">
 
-                </div>
-            </div>
-            <div class=" md:w-1/2 ">
-                <div class="h-full bg-white bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium font-bold text-pink mb-5 text-center"> {{ titel_blok_1 }}</h1>
+        <div class="flex-1 h-full bg-pink text-white p-8 mx-2 rounded">
 
-                    <p class="leading-relaxed mb-6"> {{content}}</p>
 
-                    <a href="/form">
-                        <button class="rounded bg-pink items-center text-white mt-10 px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                            Lees verder &raquo;
-                        </button></a>
+            <h1 class="text-3xl font-medium title-font text-white mb-5 text-center">{{title}}</h1>
+            <p class=" mt-3 text-white mb-3">{{content}}</p>
 
-                </div>
-            </div>
+            <a href="/nettt">
+                <button class="rounded mt-5 bg-white font-medium items-center text-pink px-4 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                    Lees verder &raquo;
+                </button> </a>
+
         </div>
+
     </div>
+
 </section>
 
-<section class="text-gray-700 body-font relative">
+
+
+<section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="background-image: url('');">
     <div class="container px-5 p-4 mx-auto ">
-        <div class="flex flex-col text-center w-full mb-7">
-            <h1 class="sm:text-3xl text-2xl font-bold  title-font mb-4 text-pink">{{ titel_blok_2 }}</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{{contentblok_2}}</p>
-        </div>
+
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
 
         </div>
 
     </div>
 
+    <div class="flex flex-col text-center w-full mb-7">
+        <h1 class="sm:text-3xl text-2xl font-bold  title-font mb-4 text-pink">{{ titel_blok_2 }}</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{{contentblok_2}}</p>
+    </div>
+
     {{ form:contact }}
-    <section class="text-gray-700 body-font relative">
-        <div class="container w-60 text-black font-medium text-center bg-gray px-20 rounded px-5 py-14 mx-auto">
-            <div class="flex flex-col text-center w-full ">
+    <section class="text-gray-700 rounded body-font relative">
+        <div class="container w-60 text-black rounded font-medium text-center bg-gray px-20 rounded px-5 py-14 mx-auto">
+            <div class="flex flex-col rounded text-center w-full ">
 
             </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                <div class="flex flex-wrap -m-2">
-                    <div class="p-2 w-1/2">
+            <div class=" rounded = mx-auto">
+                <div class="flex flex-wrap ">
+                    <div class="">
                         <div class="relative">
                             {{ if success }}
                             <div class=" text-center text-black">
@@ -71,7 +68,7 @@
 
                         </div>
                     </div>
-                    <div class="p-2 w-1/2">
+                    <div class="">
                         <div class="relative">
                             {{ if errors }}
                             <div class=" text-center text-black">
@@ -120,3 +117,6 @@
                 </div>
             </div>
         </div>
+    </section>
+</section>
+

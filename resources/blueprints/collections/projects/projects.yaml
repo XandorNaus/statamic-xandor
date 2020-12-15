@@ -115,14 +115,6 @@ sections:
           validate:
             - required
       -
-        handle: categories
-        field:
-          type: terms
-          taxonomies:
-            - categories
-          display: Categories
-          mode: select
-      -
         handle: parent
         field:
           type: entries

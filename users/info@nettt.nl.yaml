@@ -22,3 +22,10 @@ preferences:
         - slug
         - image
         - url_project
+  taxonomies:
+    categories:
+      columns:
+        - slug
+        - title
+    marc:
+      after_save: create_another

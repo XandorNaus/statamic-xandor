@@ -1,0 +1,11 @@
+form: []
+captcha_service: Recaptcha
+error_message: Captcha failed.
+hide_badge: false
+disclaimer:
+site_key:
+secret:
+invisible: false
+theme: light
+language_code:
+user_registration: false

@@ -1,4 +1,4 @@
-<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+<div class="w-full py-56 shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
     <div class="container max-w-7xl mx-auto">
     </div>
@@ -11,24 +11,22 @@
 
         <h1 class="text-3xl font-medium title-font text-white mb-5 text-center"> {{ title }}</h1>
 
-        <div class="flex space-x-3 mt-8 text-xs tracking-widest uppercase">
+        {{ berichten }}
 
-            {{ categories }}
+        <a href="{{ url }}" class="hover:bg-pink mx-2 rounded px-4 py-1 hover:text-white text-2xs font-medium bg-white text-pink"> {{ title }} </a>
 
-            <a href=" {{ url }} " class="bg-white text-pink mb-10 hover:bg-pink hover:text-pink font-bold px-3 items-center py-px  no-underline hover:text-white  hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"> {{ title_categorie }}</a>
+        {{ /berichten }}
 
-            {{ /categories }}
 
-        </div>
-
-        <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
+        <div class=" lg:w-3/4 w-full text-white mx-auto mt-16 text-center">
             <p class="text-sm0"> {{ news_content }}</p>
 
 
             <a href="/nieuws">
-                <button class="rounded bg-white items-center text-pink px-4 mt-10 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                    Ga terug naar nieuws &raquo;
+                <button class="text-white border-white border-2 py-2 px-3 hover:border-0 rounded mt-10 font-medium ...">
+                    Ga naar nieuws &raquo;
                 </button> </a>
+        </div>
 
         </div>
     </div>
@@ -38,7 +36,7 @@
 <!-- /nieuws -->
 <section class="text-gray-700 py-6 bg-white body-font">
     <div id="news">
-        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Ander nieuws</h1>
+        <h1 class="text-3xl font-bold title-font text-pink mt-10 mb-5 text-center">Meer nieuws</h1>
 
         <div class="w-full px-10  text-left bg-white-300 text-pink leading-normal">
             <div class="container max-w7xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">

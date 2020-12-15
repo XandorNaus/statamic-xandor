@@ -116,12 +116,12 @@ sections:
           validate:
             - required
       -
-        handle: categories
+        handle: berichten
         field:
           type: terms
           taxonomies:
-            - categories
-          display: Categories
+            - berichten
+          display: Berichten
           mode: select
   meta_data:
     display: 'Meta Data'

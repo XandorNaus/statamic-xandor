@@ -16,8 +16,9 @@
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col
             text-left  w-full mb-7">
+            <p>/{{slug}}</p>
 
-            <h1 class="sm:text-3xl text-2xl text-left font-bold text-pink title-font mb-4 text-gray-900"> {{ title }}</h1>
+            <h1 class="sm:text-3xl text-2xl mt-3 text-left font-bold text-pink title-font mb-4 text-gray-900"> {{ titel_blok_1 }}</h1>
 
             <p> {{ content }} </p>
 
@@ -31,58 +32,69 @@
 
     </div>
 
-    <section class="bg-no-repeat bg-center text-gray-700 text-center object-cover body-font color w-full object-top " style="background-image: url('https://images.pexels.com/photos/273214/pexels-photo-273214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
-        <div class="container px-9 py-24 mx-auto">
 
-            <div class="flex flex-wrap" >
-                <div class="md:w-1/2 " >
-                    <div class="h-full bg-white bg-gray-200  p-8 rounded bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top sm:object-fill" style="background-image: url('{{ image_blok_1 }}');background-position: center">
+    <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="background-image: url('{{ image_blok_2 }}');background-position: center">
+        <div class="container px-9 py-32 mx-auto">
 
-                    </div>
-                </div>
-                <div class=" md:w-1/2 ">
-                    <div class="h-full bg-white bg-gray-200 p-8 rounded"> <h1 class="text-3xl font-medium title-font text-pink mb-5 text-center">{{ titel_blok_1 }}</h1>
 
-                        <p class="leading-relaxed mb-6" {{ ccontentblok_2 }}</p>
+            <div class="flex-1 h-full bg-pink bg-gray-200 text-white shadow-xl p-8 mx-2 rounded">
 
-                        <a href="/form">
-                            <button class="rounded bg-pink items-center text-white px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                                Lees verder &raquo;
-                            </button></a>
 
-                    </div>
-                </div>
+                <h1 class="text-3xl font-medium title-font text-white mb-5text-center">{{titel_blok_2}}</h1>
+                <p class="leading-relaxed text-white mt-5 mb-7"> {{contentblok_2}}</p>
+
+
             </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
-    <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full  bg-cover w-full object-top">
+
+    <section class="bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="">
         <div class="container px-9 py-24 mx-auto">
 
-            <div class="flex flex-wrap" >
-                <div class="md:w-1/2 " >
-                    <div class="h-50 bg-pink bg-gray-200  p-8 rounded"> <h1 class="text-3xl font-medium title-font text-white mb-5 text-center">{{titel_blok_3}}</h1>
 
-                        <p class="text-white leading-relaxed mb-6" {{content_blok_1}}</p>
+            <div class="flex space-x-4 ...">
+                <div class="flex-1 h-full bg-white bg-gray-200  p-8 mx-2 rounded">
 
-                        <a href="/nettt">
-                            <button class="rounded bg-white items-center text-pink px-4 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                                Lees verder &raquo;
-                            </button> </a>
-                    </div>
+
+                    <h1 class="text-3xl font-medium title-font text-pink mb-5text-center">Titel</h1>
+                    <p class="leading-relaxed text-black mt-3 mb-3">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a href="/nettt">
+                        <button class="rounded mt-5 bg-pink font-medium items-center text-white px-4 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            Lees verder &raquo;
+                        </button> </a>
+
                 </div>
-                <div class=" md:w-1/2 ">
-                    <div class="h-full bg-white bg-gray-200  p-8 rounded bg-no-repeat bg-center text-gray-700 text-center body-font color bg-gray-800 w-full bg-cover w-full object-top" style="background-image: url('{{ image_blok_3 }}');background-position: center">
 
-                    </div>
+                <div class="flex-1 h-full bg-pink bg-gray-200  p-8 mx-2 rounded">
+
+
+                    <h1 class="text-3xl font-medium title-font text-white mb-5text-center">Titel</h1>
+                    <p class="leading-relaxed text-white mt-3 mb-3">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a href="/nettt">
+                        <button class="rounded mt-5 bg-white font-medium items-center text-pink px-4 py-3 no-underline transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
+                            Lees verder &raquo;
+                        </button> </a>
+
                 </div>
+
             </div>
+
+        </div>
+        </div>
+        </div>
         </div>
     </section>
-
-    <!-- /about -->
-
-
 
 
 </body>

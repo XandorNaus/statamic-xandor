@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<div class="w-full py-56  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
+<div class="w-full py-56 object-cover  shadow-2xl px-34 bg-cover w-full h-32 object-bottom" style="background-image: url('{{ image }}');background-position: center">
 
     <div class="container max-w-7xl mx-auto">
     </div>
@@ -14,28 +14,21 @@
 <section class="text-gray-700 bg-pink body-font">
     <div class="container px-5 py-16 text-center text-white mx-auto">
 
+        <h1 class="text-3xl font-medium title-font text-white mb-3 text-center"> {{ title }}</h1>
 
-        <h1 class="text-3xl font-medium title-font text-white mb-5 text-center"> {{ title }}</h1>
+        {{ tags }}
 
-        <div class="flex space-x-3 mt-8 text-xs tracking-widest uppercase">
+        <a href="{{ url }}" class="hover:bg-pink mx-2 rounded px-4 py-1 hover:text-white text-2xs font-medium bg-white text-pink"> {{ title }} </a>
 
-            {{ categories }}
+        {{ /tags }}
 
-
-                <a href=" {{ url }} " class="bg-white items-center text-pink mb-10 hover:bg-pink hover:text-pink font-bold px-4 items-center py-2  no-underline hover:text-white  hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                    {{ title }}
-        </a>
-            {{ /categories }}
-
-        </div>
-
-        <div class=" lg:w-3/4 w-full text-white mx-auto text-center">
+        <div class=" lg:w-3/4 w-full text-white mt- mx-auto mt-10  text-center">
             <p class=""> {{ project_content }}</p>
 
 
             <a href="{{url_project}}" add target="_blank">
-                <button class="rounded bg-white items-center font-bold text-pink px-4 mt-10 py-3 no-underline text-pink transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ...">
-                    Ga naar project &raquo;
+                <button class="text-white border-white border-2 py-2 px-3 hover:border-0 rounded mt-10 font-medium ...">
+                    Ga naar website &raquo;
                 </button> </a>
         </div>
     </div>
